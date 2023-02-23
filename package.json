@@ -1,0 +1,26 @@
+{
+  "name": "ethers-provider",
+  "version": "1.0.0",
+  "description": "Static JSON RPC Provider that retries on errors",
+  "main": "index.js",
+  "scripts": {
+    "test": "standard && brittle test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/LuKks/ethers-provider.git"
+  },
+  "author": "Lucas Barrena (LuKks)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/LuKks/ethers-provider/issues"
+  },
+  "homepage": "https://github.com/LuKks/ethers-provider",
+  "devDependencies": {
+    "brittle": "^3.1.3",
+    "standard": "^17.0.0"
+  },
+  "dependencies": {
+    "ethers": "^5.7.2"
+  }
+}
