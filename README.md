@@ -35,9 +35,9 @@ const provider = new Provider({ url: 'https://bsc-dataseed.binance.org', chainId
 ```
 
 If you set one of those names, it will autocomplete the chain ID for you:\
-`eth`: (mainnet `1` | testnet `3`)\
-`bnb`: (mainnet `56` | testnet `97`)\
-`polygon`: (mainnet `137` | testnet `80001`)
+`eth`: mainnet `1` | testnet `3`\
+`bnb`: mainnet `56` | testnet `97`\
+`polygon`: mainnet `137` | testnet `80001`
 
 This example uses the chain ID `56`:
 ```js
