@@ -32,3 +32,8 @@ test('polygon', function (t) {
   t.alike(new Provider({ name: 'polygon', testnet: false }).connection, { name: 'polygon', chainId: 137, skipFetchSetup: true })
   t.alike(new Provider({ name: 'polygon', testnet: true }).connection, { name: 'polygon', chainId: 80001, skipFetchSetup: true })
 })
+
+test('chain id as string', function (t) {
+  const provider = new Provider({ url: 'https://json-rpc-example.tld', chainId: '1337' })
+  t.alike(provider.connection, { url: 'https://json-rpc-example.tld', chainId: 1337, skipFetchSetup: true })
+})

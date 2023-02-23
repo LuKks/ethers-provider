@@ -8,6 +8,9 @@ class Provider extends StaticJsonRpcProvider {
       const net = Provider.networks[network.name + '-' + (network.testnet ? 'testnet' : 'mainnet')]
       if (!net) throw new Error('Chain ID is required to create a static provider')
       network.chainId = net.chainId
+    } else {
+      network.chainId = parseInt(network.chainId, 10)
+      if (!network.chainId) throw new Error('Invalid chain ID: ' + network.chainId)
     }
 
     delete network.testnet
